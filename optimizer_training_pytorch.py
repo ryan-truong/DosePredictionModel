@@ -61,4 +61,5 @@ def fit_model(data: dict, n_epochs: int = 1000, learning_rate: float = 1e-2, dev
         #     print(f"Current dwell time scalars: {model.dwell_time_scalars.detach().to("cpu").numpy()}")
 
     # Add original ring data back in for calculation
+
     dwell_time_scalars = model.dwell_time_scalars.detach()
